@@ -3,13 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Playback</title>
+    <title>Neuro Nauts Video</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-image: url('https://example.com/background-image.jpg'); /* Replace with your desired background image URL */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px; /* Max width for the video */
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Neuro Nauts Video</h1>
-    <video width="600" controls>
-        <source src="Neuro%20Nauts.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="container">
+        <h1>Neuro Nauts Video</h1>
+        <video controls>
+            <source src="Neuro%20Nauts.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Thank you for watching our presentation!</p>
+    </div>
 </body>
 </html>
